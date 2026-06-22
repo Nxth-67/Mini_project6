@@ -1,5 +1,6 @@
 package scene_main;
 
+import java.nio.file.Files;
 import java.sql.Array;
 import java.util.ArrayList;
 
@@ -36,8 +37,15 @@ public class Controller {
         var  file_chooser = new javafx.stage.FileChooser();
         var file = file_chooser.showOpenDialog(stage);
 
-        System.out.println(file);
 
+        var data = new ArrayList<String>();
+        for (var line : Files.readAllLines(file.toPath())) {
+            data.add((String) line);
+        }
+        
+        for (var item : data) {
+            System.out.println(data);
+        }
         
 
     }
