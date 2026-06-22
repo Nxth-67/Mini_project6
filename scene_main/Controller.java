@@ -1,5 +1,6 @@
 package scene_main;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.sql.Array;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class Controller {
     private Label label_status;
 
     @FXML
-    private ListView<?> list_view;
+    private ListView<String> list_view;
 
     @FXML
     void on_create(ActionEvent event) {
@@ -39,14 +40,12 @@ public class Controller {
 
 
         var data = new ArrayList<String>();
-        for (var line : Files.readAllLines(file.toPath())) {
+        File selected = null;
+        for (var line : Files.readAllLines(selected.toPath())) {
             data.add((String) line);
         }
-        
-        for (var item : data) {
-            System.out.println(item);
-        }
 
+        list_view.getItems().addAll(data);
 
     }
 
