@@ -8,18 +8,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scene_main.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ListView fx:id="list_view" layoutX="132.0" layoutY="129.0" prefHeight="323.0" prefWidth="346.0" style="-fx-border-color: green;" />
       <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="14.0" layoutY="14.0">
          <image>
-            <Image url="@../Mini_Project_5/asset/ITC.png" />
+            <Image url="@../asset/ITC.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="112.0" fitWidth="113.0" layoutX="483.0" layoutY="14.0">
          <image>
-            <Image url="@../Mini_Project_5/asset/GTR.png" />
+            <Image url="@../asset/GTR.png" />
          </image>
       </ImageView>
       <Label layoutX="193.0" layoutY="27.0" text="Mini_Project 6">

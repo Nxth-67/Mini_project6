@@ -1,4 +1,14 @@
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+
+
 public class Main extends javafx.application.Application {
+
+        public static void main(String[] args) {
+        launch(args);
+    }
+
 
     @Override
     public void start(javafx.stage.Stage stage) throws Exception {
@@ -6,10 +16,6 @@ public class Main extends javafx.application.Application {
         stage.setTitle("CRUD");
         stage.setScene(new javafx.scene.Scene(root));
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }
