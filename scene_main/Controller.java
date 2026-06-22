@@ -1,5 +1,8 @@
 package scene_main;
 
+import java.sql.Array;
+import java.util.ArrayList;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -25,13 +28,17 @@ public class Controller {
     }
 
     @FXML
-    void on_read(ActionEvent event) {
+    void on_read(ActionEvent event) throws Exception {
 
         // object that help to choose file
 
         var stage = (Stage) label_status.getScene().getWindow();
         var  file_chooser = new javafx.stage.FileChooser();
         var file = file_chooser.showOpenDialog(stage);
+
+        System.out.println(file);
+
+        
 
     }
 

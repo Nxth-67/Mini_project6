@@ -15,11 +15,11 @@ public class Main extends javafx.application.Application {
     @Override
     public void start(javafx.stage.Stage stage) throws Exception {
         var view_main = this.getClass().getResource("scene_main/View.fxml");
+        var controller_main = new scene_main.Controller();
 
         var loader = new FXMLLoader();;
-        URL view_main1 = null;
-        loader.setLocation(view_main1);
-        loader.setController(new Controller_main());
+        loader.setLocation(view_main);
+        loader.setController(controller_main);
 
         var scene = new javafx.scene.Scene(loader.load());
 
