@@ -14,7 +14,7 @@ public class Main extends javafx.application.Application {
 
     @Override
     public void start(javafx.stage.Stage stage) throws Exception {
-        javafx.scene.Parent root = javafx.fxml.FXMLLoader.load(getClass().getResource("scene_main/main.fxml"));
+        var view_main.load(getClass().getResource("scene_main/View.fxml"));
 
         var loader = new FXMLLoader();;
         URL view_main = null;
