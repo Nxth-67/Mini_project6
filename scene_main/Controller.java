@@ -44,9 +44,9 @@ public class Controller {
         }
         
         for (var item : data) {
-            System.out.println(data);
+            System.out.println(item);
         }
-        
+
 
     }
 
@@ -57,6 +57,14 @@ public class Controller {
 
     @FXML
     void intialize() {
+
+        var data = new ArrayList<String>();
+        data.add("Orange");
+        data.add("Apple");
+        data.add("Banana");
+
+        // add data to list view
+        list_view.getItems().addAll(data);
 
     }
 
